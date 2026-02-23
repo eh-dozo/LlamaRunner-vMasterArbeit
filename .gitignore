@@ -16,6 +16,10 @@
 *.dylib
 *.dll
 
+# Whitelist ThirdParty binaries (required for llama.cpp)
+!Source/ThirdParty/**/Bin/*.dll
+!Source/ThirdParty/**/Lib/*.lib
+
 # Fortran module files
 *.mod
 
@@ -24,6 +28,7 @@
 *.la
 *.a
 *.lib
+!Source/ThirdParty/**/Lib/*.lib
 
 # Executables
 *.exe
